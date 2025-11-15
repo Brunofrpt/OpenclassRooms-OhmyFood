@@ -1,5 +1,11 @@
- body {
+body {
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+}
+body h1 {
+  color: #3490dc;
+  text-align: center;
+}
 
-    background-color: white;
-
- }
+/*# sourceMappingURL=style.css.map */

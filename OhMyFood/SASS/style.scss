@@ -1,0 +1,12 @@
+$primary: #3490dc;
+
+body {
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+
+  h1 {
+    color: $primary;
+    text-align: center;
+  }
+}
