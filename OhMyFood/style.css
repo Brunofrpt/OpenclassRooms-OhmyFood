@@ -1,11 +1,102 @@
-body {
-  font-family: sans-serif;
-  background: #0f172a;
-  color: white;
+html {
+  box-sizing: border-box;
 }
-body h1 {
-  color: #3490dc;
-  text-align: center;
+
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  background-color: transparent;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header__logo {
+  margin: 16px 0;
+}
+
+.header__localisation {
+  width: 100%;
+  background-color: #EAEAEA;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header__localisation-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+  padding-left: 30px;
+}
+
+.header__localisation-input {
+  border: none;
+  color: #000000;
+  height: 19px;
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: transparent;
+}
+.header__localisation-input::placeholder {
+  color: #000000;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
