@@ -1,0 +1,33 @@
+@use '../abstracts/variables';
+
+.reservez {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: variables.$color-background-primary;
+    margin-top: 4px;
+    padding: 40px 30px;
+
+
+
+    &__titre {
+
+        text-align: center;
+        padding: 0 11px;
+
+    }
+
+    &__texte {
+
+        text-align: center;
+
+    }
+}
+
+.reservez__button {
+
+    width: 218px;
+    margin-bottom: 15px;
+
+}

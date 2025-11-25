@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+.cta {
+
+    border-radius: 25px;
+    height: 50px;
+    border: none;
+    color:white;
+    font-family: variables.$police-primaire;
+    font-size: 16px;
+    background: linear-gradient(180deg, variables.$color-bouton-clair, variables.$color-bouton-foncé);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+}

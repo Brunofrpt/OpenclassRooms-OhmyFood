@@ -24,6 +24,11 @@ ol {
 
 h2, h3, h4 {
   background-color: transparent;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -54,7 +59,7 @@ h3 {
 
 p {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 header {
@@ -88,7 +93,7 @@ header {
 
 .header__localisation-input {
   border: none;
-  color: #000000;
+  color: #353535;
   height: 19px;
   font-family: "Roboto";
   font-size: 16px;
@@ -97,6 +102,40 @@ header {
 .header__localisation-input::placeholder {
   color: #000000;
   font-size: 16px;
+}
+
+.reservez {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #F3F3F3;
+  margin-top: 4px;
+  padding: 40px 30px;
+}
+.reservez__titre {
+  text-align: center;
+  padding: 0 11px;
+}
+.reservez__texte {
+  text-align: center;
+}
+
+.reservez__button {
+  width: 218px;
+  margin-bottom: 15px;
+}
+
+.cta {
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
