@@ -1,5 +1,7 @@
 @use '../abstracts/variables';
 
+/*section reservez*/
+
 .reservez {
 
     display: flex;
@@ -32,7 +34,7 @@
     }
 }
 
-
+/*section fonctionnement*/
 
 .fonctionnement {
 
@@ -100,8 +102,112 @@
         font-weight: 500;
 
     }
+}
 
-    
+/*section restaurants*/
+
+.restaurants {
+
+    background-color: variables.$color-background-primary;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+
+
+    &__carte {
+
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px 0 rgba(0,0,0,0.1);
+
+    }
+
+    &__liste {
+
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        width: 340px;
+
+    }
+
+    &__decoration {
+
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    &__image {
+
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__nouveau {
+
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background-color: variables.$color-decoration;
+        color: variables.$color-decoration-texte;
+        font-weight: 500;
+        font-size: 14px;
+        width: 80px;
+        height: 29px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__description {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+
+    &__lieux{
+
+        font-size: 17px;
+
+    }
+
+    &__coeurbtn {
+
+        width: 22px;
+        height: 21px;
+
+    }
+
+    &__coeuricon {
+
+            font-size: 20px;
+
+        
+
+        &--plein {
+
+            font-size: 20px;
+            background: linear-gradient(180deg,variables.$color-bouton-foncé,variables.$color-bouton-clair);
+            
+            -webkit-background-clip: text;
+            color: transparent;
+
+
+        }
+
+    }
 
 }
 
