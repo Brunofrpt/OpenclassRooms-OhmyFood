@@ -42,7 +42,7 @@
 
         <section class="reservez">
 
-            <h2 class="reservez__titre"> Réservez le menu qui vous convient</h2>
+            <h2 class="reservez__titre">Réservez le menu qui vous convient</h2>
             <p class="reservez__texte">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button class="cta reservez__button">Explorez nos restaurants</button>
 
@@ -70,7 +70,7 @@
                     <div class="fonctionnement__span">
                         <span class="fonctionnement__numero">3</span>
                     </div>
-                    <i class="fa-solid fa-store fonctionnement__icone--3" aria-hidden="true"></i>
+                    <i class="fa-solid fa-store fonctionnement_icone fonctionnement__icone--3" aria-hidden="true"></i>
                     <p class="fonctionnement__texte">Dégustez au restaurant</p>
                 </li>
             </ol>
@@ -98,9 +98,9 @@
                                 <p class="restaurants__lieux">Ménilmontant</p>
                             </div>
                             <div class="restaurants__coeur">
-                                <button type="button" class="restaurants__coeurbtn">
-                                    <i class="fa-regular fa-heart restaurants__coeuricon"></i>
-                                </button>
+                                <div class="restaurants__coeurbtn">
+                                    <i class="fa-regular fa-heart restaurants__coeuricon restaurants__coeuricon--plein restaurants__coeuricon--vide"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -122,9 +122,9 @@
                                 <p class="restaurants__lieux">Charonne</p>
                             </div>
                             <div class="restaurants__coeur">
-                                <button type="button" class="restaurants__coeurbtn">
-                                    <i class="fa-solid fa-heart restaurants__coeuricon--plein"></i>
-                                </button>
+                                <div class="restaurants__coeurbtn">
+                                    <i class="fa-solid fa-heart restaurants__coeuricon restaurants__coeuricon--plein restaurants__coeuricon--vide"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -141,12 +141,12 @@
                         <div class="restaurants__description">
                             <div class="restaurants__texte">
                                 <h3 class="restaurants__titre">À la française</h3>
-                                <p class="restaurants__texte">Cité rouge</p>
+                                <p class="restaurants__lieux">Cité rouge</p>
                             </div>
                             <div class="restaurants__coeur">
-                                <button class="restaurants__coeurbtn" type="button">
-                                    <i class="fa-solid fa-heart restaurants__coeuricon--plein"></i>
-                                </button>
+                                <div class="restaurants__coeurbtn">
+                                    <i class="fa-solid fa-heart restaurants__coeuricon restaurants__coeuricon--plein restaurants__coeuricon--vide"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -164,12 +164,12 @@
                         <div class="restaurants__description">
                             <div class="restaurants__texte">
                                 <h3 class="restaurants__titre">Le délice des sens</h3>
-                                <p class="restaurants__texte">Folie-Méricourt</p>
+                                <p class="restaurants__lieux">Folie-Méricourt</p>
                             </div>
                             <div class="restaurants__coeur">
-                                <button type="button" class="restaurants__coeurbtn">
-                                    <i class="fa-solid fa-heart restaurants__coeuricon--plein"></i>
-                                </button>
+                                <div class="restaurants__coeurbtn">
+                                    <i class="fa-solid fa-heart restaurants__coeuricon restaurants__coeuricon--plein restaurants__coeuricon--vide"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -187,14 +187,14 @@
             </a>
             <ul class="footer__liste">
                 <li class="footer__item">
-                    <a class="footer__lien--avec-icone" href="#">
+                    <a class="footer__lien footer__lien--avec-icone" href="#">
                         <i class="fa-solid fa-utensils footer__icone" aria-hidden="true"></i>
                         Proposer un restaurant
                     </a>
 
                 </li>
                 <li class="footer__item">
-                    <a class="footer__lien--avec-icone" href="#">
+                    <a class="footer__lien footer__lien--avec-icone" href="#">
                         <i class="fa-solid fa-handshake footer__icone--taille" aria-hidden="true"></i>
                         Devenir partenaire
                     </a>

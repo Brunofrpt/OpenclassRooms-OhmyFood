@@ -194,11 +194,9 @@
 
             font-size: 20px;
 
-        
 
         &--plein {
 
-            font-size: 20px;
             background: linear-gradient(180deg,variables.$color-bouton-foncé,variables.$color-bouton-clair);
             
             -webkit-background-clip: text;
@@ -206,6 +204,12 @@
 
 
         }
+
+        // &--vide {
+
+        //     color: variables.$color-police-principale;
+
+        // }
 
     }
 
