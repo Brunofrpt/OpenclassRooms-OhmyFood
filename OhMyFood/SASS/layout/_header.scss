@@ -2,53 +2,81 @@
 
 
 .header {
+
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: variables.$color-background-secondary;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 
-}
+  &__logo {
 
-.header__logo {
+    margin: 16px 0;
 
-  margin: 16px 0;
+  }
 
-}
+
+  &__retour {
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 17px;
+    left: 17px;
+    width: 30px;
+    height: 30px;
+
+  }
+
+  &__icone-retour {
+
+    font-size: 22px;
+
+  }
 
   
-.header__localisation {
-  width: 100%;
-  background-color: variables.$color-fond-formulaire ;
-  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+  &__localisation {
 
-}
-    
+    width: 100%;
+    background-color: variables.$color-fond-formulaire ;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
 
   
-.header__localisation-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 17px;
-  width: 100%;
-  height: 50px;
-  background-color: variables.$color-fond-formulaire;
-  padding-left: 30px;
-}  
 
-.header__localisation-input {
-  border: none;
-  color: #353535;
-  height: 19px;
-  font-family: variables.$police-primaire;
-  font-size: 16px;
-  background-color: transparent;
-        
-  &::placeholder {
+  &-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 100%;
+    height: 50px;
+    background-color: variables.$color-fond-formulaire;
+    padding-left: 30px;
+  }  
+
+  &-input {
+    border: none;
+    color: #353535;
+    height: 19px;
+    font-family: variables.$police-primaire;
+    font-size: 16px;
+    background-color: transparent;
+
+     &::placeholder {
+
     color: variables.$color-police-principale;
     font-size: 16px;
+     }
     }
-}      
+  }  
+}
+
+
+
+
+        
+ 
+    
     
    

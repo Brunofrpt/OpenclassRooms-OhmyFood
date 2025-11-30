@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - La Palette du goût</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--******************** header *********************-->
+
+    <header class="header">
+
+        <button class="header__wrapperbtn">
+            <a class="header__retour" href="index.html">
+                <i class="fa-solid fa-arrow-left header__icone-retour"></i>
+            </a>
+        </button>
+
+        <a href="index.html">
+            <h1 class="header__logo">ohmyfood </h1>
+        </a>
+
+    </header>
+    
+    <!--******************** main *********************-->
+
+    <main class="menu">
+
+    <!--******************** section intro *********************-->
+
+        <section class="intro">
+            <img class="intro__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat servi au restaurant La palette du goût">
+            <div class="intro__carte">
+                <h2 class="intro__titre">La Palette du gout</h2>
+                <div class="intro__coeurbtn">
+                    <i class="fa-regular fa-heart restaurants__coeuricon restaurants__coeuricon--plein restaurants__coeuricon--vide"></i>
+                </div>
+            </div>
+        </section>
+
+    <!--******************** section entrée *********************-->    
+
+        <section class="etape">
+            <h2 class="etape__titre">ENTRÉES</h2>
+            <ul class="etape__liste">
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Fricassée d'escargots</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Au piment d'Espelette </p>
+                        <p class="etape__prix">25€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Foie gras de canard mi-cuit</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Et ses copeaux de truffe noire</p>
+                        <p class="etape__prix">35€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Œuf au plat</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Assaisonné à la truffe sur lit de caviar</p>
+                        <p class="etape__prix">20€</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="etape">
+            <h2 class="etape__titre">PLATS</h2>
+            <ul class="etape__liste">
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Filet de bœuf aux herbes</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Accompagné de sa ribambelle de légumes</p>
+                        <p class="etape__prix">40€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Parmentier de queue de bœuf</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">À la truffe noire sur sa purée de panais</p>
+                        <p class="etape__prix">35€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Filet de turbot</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Aux agrumes</p>
+                        <p class="etape__prix">44€</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="etape">
+            <h2 class="etape__titre">DESSERTS</h2>
+            <ul class="etape__liste">
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Paris-Brest</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Revisité</p>
+                        <p class="etape__prix">18€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Macaron au chocolat d'exception </h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Et glace à la vanille de Madagascar</p>
+                        <p class="etape__prix">22€</p>
+                    </div>
+                </li>
+                <li class="etape__item">
+                    <h3 class="etape__sous-titre">Mousse au chocolat</h3>
+                    <div class="etape__infos">
+                        <p class="etape__description">Au piment d'Espelette et à la truffe noire</p>
+                        <p class="etape__prix">23€</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="commander">
+
+            <button class="cta commander__button">
+                Commander
+            </button>
+
+        </section>
+    </main>
+
+    <!--******************** Footer *********************-->
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a href="index.html">
+                <h2 class="footer__logo">ohmyfood</h2>
+            </a>
+            <ul class="footer__liste">
+                <li class="footer__item">
+                    <a class="footer__lien footer__lien--avec-icone" href="#">
+                        <i class="fa-solid fa-utensils footer__icone" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </a>
+
+                </li>
+                <li class="footer__item">
+                    <a class="footer__lien footer__lien--avec-icone" href="#">
+                        <i class="fa-solid fa-handshake footer__icone--taille" aria-hidden="true"></i>
+                        Devenir partenaire
+                    </a>
+
+                </li>
+                <li class="footer__item">
+                    <a class="footer__lien" href="#">
+                        Mentions légales
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__lien" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    
+</body>
+</html>
