@@ -205,35 +205,6 @@
 
     }
 
-    &__coeurbtn {
-
-        width: 22px;
-        height: 21px;
-
-    }
-
-    &__coeuricon {
-
-            font-size: 20px;
-
-
-        &--plein {
-
-            background: linear-gradient(180deg,variables.$color-bouton-foncé,variables.$color-bouton-clair);
-            
-            -webkit-background-clip: text;
-            color: transparent;
-
-
-        }
-
-        // &--vide {
-
-        //     color: variables.$color-police-principale;
-
-        // }
-
-    }
 
 }
 

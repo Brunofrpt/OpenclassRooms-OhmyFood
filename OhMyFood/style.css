@@ -301,18 +301,6 @@ p {
 .restaurants__lieux {
   font-size: 17px;
 }
-.restaurants__coeurbtn {
-  width: 22px;
-  height: 21px;
-}
-.restaurants__coeuricon {
-  font-size: 20px;
-}
-.restaurants__coeuricon--plein {
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-}
 
 .menu {
   display: flex;
@@ -416,10 +404,48 @@ p {
   font-family: "Roboto";
   font-size: 16px;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: opacity 500ms ease, box-shadow 500ms ease;
+}
+.cta:hover {
+  opacity: 0.85;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.coeurbtn {
+  width: 22px;
+  height: 21px;
+  position: relative;
+}
+
+.coeuricon {
+  font-size: 20px;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 750ms ease;
+}
+.coeuricon--plein {
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.coeuricon--vide {
+  color: #000000;
+  opacity: 1;
+}
+
+.coeurbtn:hover .coeuricon--plein {
+  opacity: 1;
+}
+
+.coeurbtn:hover .coeuricon--vide {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
