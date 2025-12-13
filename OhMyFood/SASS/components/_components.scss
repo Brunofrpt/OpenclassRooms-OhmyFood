@@ -29,9 +29,22 @@
 
 .coeurbtn {                     // <--- containeur pour icône font awesome
 
-        width: 22px;
-        height: 21px;
-        position: relative;
+    width: 22px;
+    height: 21px;
+    position: relative;
+
+}
+
+.coeurbtn__chekbox {
+
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
 }
 
@@ -44,6 +57,7 @@
     align-items: center;
     justify-content: center;
     transition: opacity 750ms ease;
+    pointer-events: none;
 
 
     &--plein {
@@ -63,13 +77,13 @@
 
 }
 
-.coeurbtn:hover .coeuricon--plein {
+.coeurbtn__chekbox:checked ~ .coeuricon--plein {
 
     opacity: 1;
 
 }
 
-.coeurbtn:hover .coeuricon--vide {
+.coeurbtn__chekbox:checked ~ .coeuricon--vide {
 
     opacity: 0;
 

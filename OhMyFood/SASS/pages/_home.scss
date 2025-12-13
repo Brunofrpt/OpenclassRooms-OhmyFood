@@ -136,6 +136,7 @@
 
     &__carte {
 
+        position: relative;
         width: 100%;
         background-color: white;
         border-radius: 15px;
@@ -205,6 +206,15 @@
 
     }
 
+    /*section restaurants mais placement div coeur*/
+
+    &__coeur {
+
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+
+    }
 
 }
 
