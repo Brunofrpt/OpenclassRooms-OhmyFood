@@ -18,6 +18,7 @@
 
         width: 100%;
         height: auto;
+        max-height: 270px;
         object-fit: cover;
         display: block;
 
@@ -53,6 +54,25 @@
     flex-direction: column;
     gap: 12px;
     padding: 30px 20px 20px;
+    animation: balayage 1000ms ease both;
+
+    &--delay-1 { 
+
+        animation-delay: 250ms; 
+
+    }
+
+    &--delay-2 { 
+
+        animation-delay: 500ms; 
+
+    }
+
+    &--delay-3 { 
+        
+        animation-delay: 800ms; 
+    
+    }
 
     &__titre {
 
@@ -72,7 +92,6 @@
             background-color: #99E2D0;
 
         }
-
     }
 
     &__liste {
@@ -185,6 +204,7 @@
         opacity: 0;
 
     }
+
     
 // ====================================
 // quand la checkbox est cochée
@@ -234,5 +254,16 @@
 
     }
 
+}
+
+@keyframes balayage {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 

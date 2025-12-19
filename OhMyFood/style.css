@@ -321,6 +321,7 @@ p {
 .intro__image {
   width: 100%;
   height: auto;
+  max-height: 270px;
   object-fit: cover;
   display: block;
 }
@@ -346,6 +347,16 @@ p {
   flex-direction: column;
   gap: 12px;
   padding: 30px 20px 20px;
+  animation: balayage 1000ms ease both;
+}
+.etape--delay-1 {
+  animation-delay: 250ms;
+}
+.etape--delay-2 {
+  animation-delay: 500ms;
+}
+.etape--delay-3 {
+  animation-delay: 800ms;
 }
 .etape__titre {
   font-size: 16px;
@@ -466,6 +477,16 @@ p {
   font-weight: 500;
 }
 
+@keyframes balayage {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .cta {
   border-radius: 25px;
   height: 50px;
