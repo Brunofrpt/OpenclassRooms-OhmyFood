@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,105 +33,159 @@
         </a>
 
     </header>
-    
+
     <!--******************** main *********************-->
 
     <main class="menu">
 
-    <!--******************** section intro *********************-->
+        <!--******************** section intro *********************-->
 
         <section class="intro">
-            <img class="intro__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat servi au restaurant La palette du goût">
+            <img class="intro__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Plat servi au restaurant La palette du goût">
             <div class="intro__carte">
                 <h2 class="intro__titre">La Palette du gout</h2>
                 <div class="coeurbtn">
-                    <input type="checkbox" class="coeurbtn__chekbox"
-                                aria-label="ajouter ce restaurant aux favoris">
+                    <input type="checkbox" class="coeurbtn__chekbox" aria-label="ajouter ce restaurant aux favoris">
                     <i class="fa-regular fa-heart coeuricon coeuricon--vide"></i>
                     <i class="fa-solid fa-heart coeuricon coeuricon--plein"></i>
                 </div>
             </div>
         </section>
 
-    <!--******************** section entrée *********************-->    
+        <!--******************** section entrée *********************-->
 
-        <section class="etape">
+        <section class="etape etape--delay-1">
             <h2 class="etape__titre">ENTRÉES</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Fricassée d'escargots</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Au piment d'Espelette </p>
-                        <p class="etape__prix">25€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Fricassée d'escargots</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Au piment d'Espelette </p>
+                            <p class="etape__prix">25€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Foie gras de canard mi-cuit</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Et ses copeaux de truffe noire</p>
-                        <p class="etape__prix">35€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Foie gras de canard mi-cuit</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Et ses copeaux de truffe noire</p>
+                            <p class="etape__prix">35€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Œuf au plat</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Assaisonné à la truffe sur lit de caviar</p>
-                        <p class="etape__prix">20€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Œuf au plat</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Assaisonné à la truffe sur lit de caviar</p>
+                            <p class="etape__prix">20€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
             </ul>
         </section>
 
-        <section class="etape">
+        <section class="etape etape--delay-2">
             <h2 class="etape__titre">PLATS</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Filet de bœuf aux herbes</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Accompagné de sa ribambelle de légumes</p>
-                        <p class="etape__prix">40€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Filet de bœuf aux herbes</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Accompagné de sa ribambelle de légumes</p>
+                            <p class="etape__prix">40€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Parmentier de queue de bœuf</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">À la truffe noire sur sa purée de panais</p>
-                        <p class="etape__prix">35€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Parmentier de queue de bœuf</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">À la truffe noire sur sa purée de panais</p>
+                            <p class="etape__prix">35€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Filet de turbot</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Aux agrumes</p>
-                        <p class="etape__prix">44€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Filet de turbot</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Aux agrumes</p>
+                            <p class="etape__prix">44€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
             </ul>
         </section>
 
-        <section class="etape">
+        <section class="etape etape--delay-3">
             <h2 class="etape__titre">DESSERTS</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Paris-Brest</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Revisité</p>
-                        <p class="etape__prix">18€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Paris-Brest</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Revisité</p>
+                            <p class="etape__prix">18€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Macaron au chocolat d'exception </h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Et glace à la vanille de Madagascar</p>
-                        <p class="etape__prix">22€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Macaron au chocolat d'exception </h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Et glace à la vanille de Madagascar</p>
+                            <p class="etape__prix">22€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
                 <li class="etape__item">
-                    <h3 class="etape__sous-titre">Mousse au chocolat</h3>
-                    <div class="etape__infos">
-                        <p class="etape__description">Au piment d'Espelette et à la truffe noire</p>
-                        <p class="etape__prix">23€</p>
-                    </div>
+                    <label class="etape__label">
+                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                        <h3 class="etape__sous-titre">Mousse au chocolat</h3>
+                        <div class="etape__infos">
+                            <p class="etape__description">Au piment d'Espelette et à la truffe noire</p>
+                            <p class="etape__prix">23€</p>
+                        </div>
+                        <div class="etape__animation">
+                            <i class="fa-regular fa-circle-check etape__icone"></i>
+                        </div>
+                    </label>
                 </li>
             </ul>
         </section>
@@ -180,6 +235,7 @@
         </nav>
     </footer>
 
-    
+
 </body>
+
 </html>

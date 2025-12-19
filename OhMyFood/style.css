@@ -367,32 +367,93 @@ p {
   flex-direction: column;
   gap: 12px;
 }
-.etape__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  padding: 15px;
-  background-color: #FFFFFF;
-  width: 100%;
-  max-width: 634px;
-  border-radius: 25px;
-  height: 72px;
-  box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1);
-}
 .etape__sous-titre {
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: padding-right 250ms ease;
 }
 .etape__infos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: padding-right 250ms ease;
 }
 .etape__description {
   font-size: 15.04px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  transition: padding-right 250ms ease;
+  flex: 1;
 }
 .etape__prix {
   font-size: 15.04px;
   font-weight: 700;
+  transition: transform 250ms ease;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.etape__animation {
+  position: absolute;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  inset: 0 0 0 auto;
+  transform: translateX(100%);
+  transition: transform 250ms ease;
+  z-index: 0;
+}
+.etape__icone {
+  display: flex;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #99E2D0;
+  font-size: 24px;
+  transition: transform 500ms ease;
+}
+.etape__label {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 3px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 634px;
+  margin: 0 auto;
+  border-radius: 25px;
+  height: 72px;
+  box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1);
+}
+.etape__validation {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.etape__validation:checked ~ .etape__sous-titre {
+  padding-right: 115px;
+}
+.etape__validation:checked ~ .etape__infos .etape__description {
+  padding-right: 60px;
+}
+.etape__validation:checked ~ .etape__infos .etape__prix {
+  transform: translateX(-60px);
+}
+.etape__validation:checked ~ .etape__animation {
+  transform: translateX(0);
+}
+.etape__validation:checked ~ .etape__animation .etape__icone {
+  transform: rotate(360deg);
 }
 
 .commander {
