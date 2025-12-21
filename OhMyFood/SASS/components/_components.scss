@@ -1,5 +1,8 @@
 @use '../abstracts/variables';
 
+
+// bouton call to action pour découvrez nos restaurants (home) et commander (restaurants XXX)************************************************************************
+
 .cta {
 
     border-radius: 25px;
@@ -25,7 +28,7 @@
 
 }
 
-// bouton coeur favoris
+// composant du : bouton coeur favoris******************************************************************************************************************************
 
 .coeurbtn {                     // <--- containeur pour icône font awesome
 
@@ -60,7 +63,7 @@
     pointer-events: none;
 
 
-    &--plein {
+    &--plein { //propriétés exclusives plein
 
         background: linear-gradient(180deg,variables.$color-bouton-foncé,variables.$color-bouton-clair);
         -webkit-background-clip: text;
@@ -68,7 +71,7 @@
         opacity: 0;
     }
 
-    &--vide {
+    &--vide { //propriétés exclusives vide
 
         color: variables.$color-police-principale;
         opacity: 1;
@@ -77,15 +80,101 @@
 
 }
 
-.coeurbtn__chekbox:checked ~ .coeuricon--plein {
+.coeurbtn__chekbox:checked ~ .coeuricon--plein { //propriétés exclusives plein & coché
 
     opacity: 1;
 
 }
 
-.coeurbtn__chekbox:checked ~ .coeuricon--vide {
+.coeurbtn__chekbox:checked ~ .coeuricon--vide { //propriétés exclusives vide & coché
 
     opacity: 0;
+
+}
+
+// composants du: loader *******************************************************************************************************************
+
+.loader {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: variables.$color-background-secondary;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25%;
+    z-index: 999;
+    animation: loader-masque 1700ms forwards;
+
+    &__barre {
+
+        width: 15px;
+        height: 100px;
+        animation: barres 1000ms backwards infinite ease-in-out alternate;
+        @for $i from 1 through 6 {
+            &--#{$i} {
+                animation-delay: variables.$anim-delay * $i;
+            }
+        }
+    
+        &--couleur1 {
+
+            background-color: variables.$color-bouton-clair;
+
+        }
+
+        &--couleur2 {
+
+            background-color: variables.$color-bouton-foncé;
+
+        }
+
+        &--couleur3 {
+
+            background-color: variables.$color-decoration;
+
+        }
+    }    
+}
+
+//keyframes ----
+
+//--------Augmente et rétrécit les barres du loader-------//
+
+@keyframes barres {
+
+    0% {
+
+        transform: scaleY(0.5);
+
+    }
+
+    100% {
+
+        transform: scaleY(1);
+
+    }
+
+}
+
+//-------fait disparaitre le loader---------//
+
+@keyframes loader-masque {
+
+    0%, 80% {
+
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    100% {
+
+        opacity: 0;
+        visibility: hidden;
+
+    }
 
 }
 

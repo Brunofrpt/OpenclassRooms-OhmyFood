@@ -410,7 +410,7 @@ p {
 }
 .etape__animation {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -559,60 +559,20 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 25%;
   z-index: 999;
-  animation: loader-masque 1700ms forwards;
 }
 .loader__barre {
-  width: 15px;
-  height: 100px;
-  animation: barres 1000ms backwards infinite ease-in-out alternate;
+  width: 30px;
+  height: 10px;
 }
-.loader__barre--1 {
-  animation-delay: 166.6666666667ms;
-}
-.loader__barre--2 {
-  animation-delay: 333.3333333333ms;
-}
-.loader__barre--3 {
-  animation-delay: 500ms;
-}
-.loader__barre--4 {
-  animation-delay: 666.6666666667ms;
-}
-.loader__barre--5 {
-  animation-delay: 833.3333333333ms;
-}
-.loader__barre--6 {
-  animation-delay: 1000ms;
-}
-.loader__barre--couleur1 {
+.loader--couleur1 {
   background-color: #FF79DA;
 }
-.loader__barre--couleur2 {
+.loader--couleur2 {
   background-color: #9356DC;
 }
-.loader__barre--couleur3 {
+.loader--couleur3 {
   background-color: #99E2D0;
 }
 
-@keyframes barres {
-  0% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@keyframes loader-masque {
-  0%, 80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */
