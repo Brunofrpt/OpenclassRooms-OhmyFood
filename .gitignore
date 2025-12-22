@@ -1,3 +1,6 @@
 .DS_Store
 OhMyFood/node_modules/ git add .gitignore
 OhMyFood/node_modules/
+OhMyFood/style/
+OhMyFood/styles/
+OhMyFood.zip
