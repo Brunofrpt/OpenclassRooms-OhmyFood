@@ -561,39 +561,30 @@ p {
   align-items: center;
   padding: 25%;
   z-index: 999;
-  animation: loader-masque 1700ms forwards;
+  animation: loader-masque 5700ms forwards;
 }
 .loader__barre {
   width: 15px;
   height: 100px;
-  animation: barres 1000ms backwards infinite ease-in-out alternate;
+  animation: barres 1000ms backwards infinite ease-in-out alternate, couleurs 3000ms linear infinite;
 }
 .loader__barre--1 {
-  animation-delay: 166.6666666667ms;
+  animation-delay: 166.6666666667ms, -200ms;
 }
 .loader__barre--2 {
-  animation-delay: 333.3333333333ms;
+  animation-delay: 333.3333333333ms, -400ms;
 }
 .loader__barre--3 {
-  animation-delay: 500ms;
+  animation-delay: 500ms, -600ms;
 }
 .loader__barre--4 {
-  animation-delay: 666.6666666667ms;
+  animation-delay: 666.6666666667ms, -800ms;
 }
 .loader__barre--5 {
-  animation-delay: 833.3333333333ms;
+  animation-delay: 833.3333333333ms, -1000ms;
 }
 .loader__barre--6 {
-  animation-delay: 1000ms;
-}
-.loader__barre--couleur1 {
-  background-color: #FF79DA;
-}
-.loader__barre--couleur2 {
-  background-color: #9356DC;
-}
-.loader__barre--couleur3 {
-  background-color: #99E2D0;
+  animation-delay: 1000ms, -1200ms;
 }
 
 @keyframes barres {
@@ -602,6 +593,20 @@ p {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@keyframes couleurs {
+  0% {
+    background-color: #FF79DA;
+  }
+  33% {
+    background-color: #9356DC;
+  }
+  66% {
+    background-color: #99E2D0;
+  }
+  100% {
+    background-color: #FF79DA;
   }
 }
 @keyframes loader-masque {

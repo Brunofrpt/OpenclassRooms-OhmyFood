@@ -105,36 +105,36 @@
     align-items: center;
     padding: 25%;
     z-index: 999;
-    animation: loader-masque 1700ms forwards;
+    animation: loader-masque 5700ms forwards;
 
     &__barre {
 
         width: 15px;
         height: 100px;
-        animation: barres 1000ms backwards infinite ease-in-out alternate;
+        animation: barres 1000ms backwards infinite ease-in-out alternate, couleurs 3000ms linear infinite;
         @for $i from 1 through 6 {
             &--#{$i} {
-                animation-delay: variables.$anim-delay * $i;
+                animation-delay: variables.$anim-delay * $i, -(200ms * $i);
             }
         }
     
-        &--couleur1 {
+        // &--couleur1 {
 
-            background-color: variables.$color-bouton-clair;
+        //     background-color: variables.$color-bouton-clair;
 
-        }
+        // }
 
-        &--couleur2 {
+        // &--couleur2 {
 
-            background-color: variables.$color-bouton-foncé;
+        //     background-color: variables.$color-bouton-foncé;
 
-        }
+        // }
 
-        &--couleur3 {
+        // &--couleur3 {
 
-            background-color: variables.$color-decoration;
+        //     background-color: variables.$color-decoration;
 
-        }
+        // }
     }    
 }
 
@@ -157,6 +157,16 @@
     }
 
 }
+
+//prépare le dégradé de couleurs
+
+@keyframes couleurs {
+  0%   { background-color: variables.$color-bouton-clair; }
+  33%  { background-color: variables.$color-bouton-foncé; }
+  66%  { background-color: variables.$color-decoration; }
+  100% { background-color: variables.$color-bouton-clair; }
+}
+
 
 //-------fait disparaitre le loader---------//
 
