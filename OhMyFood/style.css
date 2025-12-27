@@ -356,6 +356,55 @@ p {
     gap: 7px;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+  }
+  .reservez {
+    grid-column: 1;
+    background-color: #FFFFFF;
+    border-right: 3px solid #F6F6F6;
+    width: 100%;
+    gap: 64px;
+  }
+  .fonctionnement {
+    grid-column: 2;
+  }
+  .restaurants {
+    grid-column: 1/-1;
+  }
+  .restaurants__titre-section {
+    margin: 0;
+  }
+  .restaurants__liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    max-width: none;
+  }
+  .restaurants__carte {
+    max-width: 490px;
+    max-height: 251px;
+  }
+  .footer {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 53px;
+  }
+  .footer__liste {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -530,6 +579,24 @@ p {
     opacity: 1;
   }
 }
+@media (min-width: 768px) and (max-width: 1023.9px) {
+  .intro {
+    width: 100%;
+  }
+  .intro__carte {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+  .etape {
+    width: 100%;
+  }
+  .restaurants__liste {
+    gap: 20px;
+  }
+}
 @media (min-width: 1024px) {
   .menu {
     width: 80%;
@@ -540,10 +607,16 @@ p {
     margin-left: calc(50% - 50vw);
     max-height: 383px;
   }
+  .intro__carte {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
   .intro__titre {
     text-align: center;
     margin: 0;
-    flex: 1;
   }
   .intro__header {
     display: flex;

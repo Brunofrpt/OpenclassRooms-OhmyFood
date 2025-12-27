@@ -297,3 +297,84 @@
 
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: start;
+
+    }
+
+    .reservez {
+
+        grid-column: 1;
+        background-color: variables.$color-background-secondary;
+        border-right: 3px solid variables.$color-background-primary;
+        width: 100%;
+        gap: 64px;
+
+    }
+
+    .fonctionnement {
+
+        grid-column: 2;
+
+    }
+
+    .restaurants {
+
+        grid-column: 1 / -1;
+
+        &__titre-section {
+
+            margin: 0;
+
+        }
+
+        &__liste {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px;
+            max-width:none;
+
+        }
+
+        &__carte {
+
+            max-width: 490px;
+            max-height: 251px;
+
+        }
+
+    }
+
+    .footer {
+
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+
+        &__nav {
+
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 53px;
+
+        }
+
+        &__liste {
+
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+
+        }
+
+    }
+    
+}
+
