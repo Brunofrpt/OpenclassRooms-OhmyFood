@@ -218,3 +218,82 @@
 
 }
 
+//*Medias queries*///
+
+@media (min-width:1024px) {
+
+    .fonctionnement {
+
+        padding: 50px 180px;
+
+        &__titre {
+
+            margin: 0;
+
+        }
+
+        &__liste {
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+
+        }
+
+    }
+
+    .restaurants {
+
+        padding: 50px 180px;
+
+        &__titre-section {
+
+            margin: 0;
+
+        }
+
+        &__liste {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px;
+            max-width:none;
+
+        }
+
+        &__carte {
+
+            max-width: 490px;
+            max-height: 251px;
+
+        }
+
+    }
+
+    .footer {
+
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+
+        &__nav {
+
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 53px;
+
+        }
+
+        &__liste {
+
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+
+        }
+
+    }
+
+}
+

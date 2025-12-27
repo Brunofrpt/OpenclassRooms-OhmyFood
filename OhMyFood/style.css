@@ -311,6 +311,51 @@ p {
   right: 12px;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement__titre {
+    margin: 0;
+  }
+  .fonctionnement__liste {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+  .restaurants {
+    padding: 50px 180px;
+  }
+  .restaurants__titre-section {
+    margin: 0;
+  }
+  .restaurants__liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    max-width: none;
+  }
+  .restaurants__carte {
+    max-width: 490px;
+    max-height: 251px;
+  }
+  .footer {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 53px;
+  }
+  .footer__liste {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -399,13 +444,11 @@ p {
   text-overflow: ellipsis;
   min-width: 0;
   transition: padding-right 250ms ease;
-  flex: 1;
 }
 .etape__prix {
   font-size: 15.04px;
   font-weight: 700;
   transition: transform 250ms ease;
-  flex: 0 0 auto;
   white-space: nowrap;
 }
 .etape__animation {
@@ -487,6 +530,38 @@ p {
     opacity: 1;
   }
 }
+@media (min-width: 1024px) {
+  .menu {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .intro__image {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-height: 383px;
+  }
+  .intro__titre {
+    text-align: center;
+    margin: 0;
+    flex: 1;
+  }
+  .intro__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .etape {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .etape__titre {
+    width: 683px;
+  }
+  .etape__label {
+    margin: 0;
+  }
+}
 .cta {
   border-radius: 25px;
   height: 50px;
@@ -557,9 +632,9 @@ p {
   width: 100%;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 25%;
+  gap: 10px;
   z-index: 999;
   animation: loader-masque 5700ms forwards;
 }

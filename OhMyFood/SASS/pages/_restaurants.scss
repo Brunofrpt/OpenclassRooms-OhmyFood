@@ -54,7 +54,7 @@
     flex-direction: column;
     gap: 12px;
     padding: 30px 20px 20px;
-    animation: balayage 1000ms ease both;
+    animation: balayage 1000ms ease both; //mise en place animation progressive élements menu et leur délais
 
     &--delay-1 { 
 
@@ -99,7 +99,6 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        // margin: 0 auto
 
     }
 
@@ -110,7 +109,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        transition: padding-right 250ms ease;
+        transition: padding-right 250ms ease; 
 
     }
 
@@ -136,7 +135,7 @@
         min-width: 0;
         transition: padding-right 250ms ease;
 
-        flex: 1;
+        // flex: 1;
 
     }
 
@@ -146,12 +145,12 @@
         font-weight: 700;
         transition: transform 250ms ease;
 
-        flex: 0 0 auto;
+        // flex: 0 0 auto;
         white-space: nowrap;
 
     }
 
-    &__animation {
+    &__animation {  //Rectangle vert animée
 
         position: absolute;
         background-color: #99E2D0;
@@ -165,7 +164,7 @@
         z-index: 0;
     }
 
-    &__icone {
+    &__icone { // icone font awesome a l'intérieur de l'écran 
 
         display: flex;
         position: relative;
@@ -206,9 +205,9 @@
     }
 
     
-// ====================================
+// ====================================//
 // quand la checkbox est cochée
-// ====================================
+// ====================================//
 
 &__validation:checked {
   // 1) le h3 perd de la place
@@ -256,6 +255,8 @@
 
 }
 
+//------------------------------KeyFrames-------------------//
+
 @keyframes balayage {
   from {
     transform: translateX(80px);
@@ -267,3 +268,64 @@
   }
 }
 
+//-------------------Media Queries--------------------------//
+
+@media (min-width:1024px) {
+
+
+    .menu {
+
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .intro {
+
+        &__image {
+
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            max-height: 383px;
+
+        }
+
+        &__titre {
+
+            text-align: center;
+            margin: 0;
+            flex: 1;
+
+        }
+
+        &__header {
+
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+
+        }
+
+    }
+
+    .etape {
+
+        margin: 0 auto;
+        padding: 20px 0;
+
+        &__titre {
+
+            width: 683px;
+
+        }
+
+        &__label {
+
+            margin: 0;
+
+        }
+    
+    }
+
+}

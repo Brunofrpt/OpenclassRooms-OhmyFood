@@ -101,9 +101,9 @@
     width: 100%;
     background-color: variables.$color-background-secondary;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 25%;
+    gap:10px;
     z-index: 999;
     animation: loader-masque 5700ms forwards;
 
@@ -117,24 +117,6 @@
                 animation-delay: variables.$anim-delay * $i, -(200ms * $i);
             }
         }
-    
-        // &--couleur1 {
-
-        //     background-color: variables.$color-bouton-clair;
-
-        // }
-
-        // &--couleur2 {
-
-        //     background-color: variables.$color-bouton-foncé;
-
-        // }
-
-        // &--couleur3 {
-
-        //     background-color: variables.$color-decoration;
-
-        // }
     }    
 }
 
