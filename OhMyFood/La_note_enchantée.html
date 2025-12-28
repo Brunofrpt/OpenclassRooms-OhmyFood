@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,11 +22,11 @@
 
     <header class="header">
 
-        <button class="header__wrapperbtn">
-            <a class="header__retour" href="index.html">
-                <i class="fa-solid fa-arrow-left header__icone-retour"></i>
-            </a>
-        </button>
+
+        <a class="header__retour" href="index.html" aria-label="retour">
+            <i class="fa-solid fa-arrow-left header__icone-retour"></i>
+        </a>
+
 
         <a href="index.html">
             <h1 class="header__logo">ohmyfood </h1>
@@ -52,7 +52,6 @@
                     <i class="fa-solid fa-heart coeuricon coeuricon--plein"></i>
                 </div>
             </div>
-            </div>
         </section>
 
         <!--******************** section entrée *********************-->
@@ -61,8 +60,9 @@
             <h2 class="etape__titre">ENTRÉES</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="entree-1" aria-label="selectionné">
+                        <label class="etape__clic" for="entree-1"></label>
                         <h3 class="etape__sous-titre">Ravioles de foie gras </h3>
                         <div class="etape__infos">
                             <p class="etape__description">Accompagnées de leur crème à la truffe</p>
@@ -71,11 +71,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="entree-2" aria-label="selectionné">
+                        <label class="etape__clic" for="entree-2"></label>
                         <h3 class="etape__sous-titre">Caviar osciètre</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Sur blini à la farine de blé noir</p>
@@ -84,11 +85,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="entree-3" aria-label="selectionné">
+                        <label class="etape__clic" for="entree-3"></label>
                         <h3 class="etape__sous-titre">Homard et espuma de potiron</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Marinés aux zestes d'orange</p>
@@ -97,11 +99,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="entree-4" aria-label="selectionné">
+                        <label class="etape__clic" for="entree-4"></label>
                         <h3 class="etape__sous-titre">Foie gras de canard cuit entier</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Confiture de figue et pain toasté</p>
@@ -110,7 +113,7 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -121,8 +124,9 @@
             <h2 class="etape__titre">PLATS</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="plat-1" aria-label="selectionné">
+                        <label class="etape__clic" for="plat-1"></label>
                         <h3 class="etape__sous-titre">Noix de coquilles Saint-Jacques</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Sur lit de purée de céleri-rave</p>
@@ -131,11 +135,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="plat-2" aria-label="selectionné">
+                        <label class="etape__clic" for="plat-2"></label>
                         <h3 class="etape__sous-titre">Langoustine poêlée</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Purée de patate douce</p>
@@ -144,11 +149,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="plat-3" aria-label="selectionné">
+                        <label class="etape__clic" for="plat-3"></label>
                         <h3 class="etape__sous-titre">Mijoté de queue de bœuf</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Et riz sauvage aux zestes de citron</p>
@@ -157,7 +163,7 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -168,8 +174,9 @@
             <h2 class="etape__titre">DESSERTS</h2>
             <ul class="etape__liste">
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="dessert-1" aria-label="selectionné">
+                        <label class="etape__clic" for="dessert-1"></label>
                         <h3 class="etape__sous-titre">Macaron noisette et chocolat</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Glace au caramel brun et sel de Guérande</p>
@@ -178,11 +185,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="dessert-2" aria-label="selectionné">
+                        <label class="etape__clic" for="dessert-2"></label>
                         <h3 class="etape__sous-titre">Baba au rhum revisité</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Avec son coulis de citron</p>
@@ -191,11 +199,12 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
                 <li class="etape__item">
-                    <label class="etape__label">
-                        <input type="checkbox" class="etape__validation" aria-label="selectionné">
+                    <div class="etape__label">
+                        <input type="checkbox" class="etape__validation" id="dessert-3" aria-label="selectionné">
+                        <label class="etape__clic" for="dessert-3"></label>
                         <h3 class="etape__sous-titre">Tarte au citron meringuée</h3>
                         <div class="etape__infos">
                             <p class="etape__description">Déstructurée</p>
@@ -204,20 +213,20 @@
                         <div class="etape__animation">
                             <i class="fa-regular fa-circle-check etape__icone"></i>
                         </div>
-                    </label>
+                    </div>
                 </li>
             </ul>
         </section>
 
         <!--******************** commander *********************-->
 
-        <section class="commander">
+        <div class="commander">
 
             <button class="cta commander__button">
                 Commander
             </button>
 
-        </section>
+        </div>
     </main>
 
     <!--******************** Footer *********************-->

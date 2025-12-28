@@ -537,6 +537,11 @@ p {
   height: 72px;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1);
 }
+.etape__clic {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
 .etape__validation {
   position: absolute;
   inset: 0;
